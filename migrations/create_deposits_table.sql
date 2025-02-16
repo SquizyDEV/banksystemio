@@ -1,0 +1,10 @@
+
+CREATE TABLE IF NOT EXISTS deposits (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  amount DECIMAL(10, 2) NOT NULL,
+  method TEXT NOT NULL,
+  status TEXT NOT NULL,
+  comment TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
